@@ -28,9 +28,9 @@ class bandit:
         reward = self.q_true[idx] + np.random.randn() * self.variance
 
         if self.step_size == 0:
-            self.q_estimates[idx] += (1.0 / self.actions_taken[idx]) * (reward - self.q_estimates[idx])
+            self.q_estimates[idx] = self.q_estimates[idx] + (1.0 / self.actions_taken[idx]) * (reward - self.q_estimates[idx])
         else:
-            self.q_estimates[idx] += self.step_size * (reward - self.q_estimates[idx])
+            self.q_estimates[idx] = self.q_estimates[idx] + self.step_size * (reward - self.q_estimates[idx])
 
         return reward
 
