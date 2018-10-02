@@ -17,8 +17,8 @@ class bandit:
     def action(self):
         if np.random.rand() < self.epsilon:
             return np.random.randint(self.k_arm)
-
-        return np.argmax(self.q_estimates)
+        else:
+            return np.argmax(self.q_estimates)
 
     def step(self):
         idx = self.action()
