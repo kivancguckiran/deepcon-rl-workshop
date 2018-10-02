@@ -1,4 +1,4 @@
-# DeepCon - Pekiştirmeli Öğrenmede Çok Kollu Haydutlar ve GridWorld Problemleri
+# DeepCon - Pekiştirmeli Öğrenmede Çok Kollu Haydutlar Problemi
 
 ## Katılım için gereksinimler
 
